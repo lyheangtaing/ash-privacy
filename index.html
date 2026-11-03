@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for the Ash Android app, published by Lyheang Taing. Learn about local records, photos, receipt scanning and deletion.">
+  <meta name="color-scheme" content="light dark">
+  <title>Ash | Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #fff; --ink: #202522; --muted: #5e6661; --line: #dce3de; --link: #14634b; }
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 24px; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .page { width: min(100% - 40px, 760px); margin: 0 auto; }
+    header { padding: 36px 0 28px; border-bottom: 1px solid var(--line); }
+    .brand { display: inline-flex; align-items: center; gap: 12px; color: var(--ink); text-decoration: none; font-size: 24px; font-weight: 650; }
+    .brand svg { width: 42px; height: 42px; flex: none; }
+    main { padding: 40px 0 52px; }
+    h1 { margin: 0 0 8px; font-size: 36px; line-height: 1.2; font-weight: 650; }
+    h2 { margin: 0 0 12px; font-size: 22px; line-height: 1.4; font-weight: 650; }
+    h3 { margin: 24px 0 8px; font-size: 18px; line-height: 1.5; }
+    p { margin: 0 0 16px; }
+    p:last-child { margin-bottom: 0; }
+    .meta { color: var(--muted); font-size: 15px; margin-bottom: 24px; }
+    .intro { font-size: 19px; line-height: 1.65; }
+    nav { margin: 28px 0 36px; padding: 20px 0; border-block: 1px solid var(--line); }
+    nav p { margin-bottom: 8px; font-size: 14px; color: var(--muted); }
+    nav ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); list-style: none; padding: 0; margin: 0; gap: 4px 24px; }
+    a { color: var(--link); text-underline-offset: 4px; overflow-wrap: anywhere; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 2px solid var(--link); outline-offset: 5px; border-radius: 2px; }
+    nav a { display: inline-block; padding: 5px 0; }
+    section + section { margin-top: 36px; }
+    ul { padding-left: 22px; margin: 0 0 16px; }
+    li + li { margin-top: 6px; }
+    address { font-style: normal; }
+    footer { padding: 24px 0 36px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+    .skip { position: absolute; top: -100px; left: 20px; padding: 8px 12px; background: var(--bg); }
+    .skip:focus { top: 12px; }
+    @media (max-width: 480px) {
+      header { padding-top: 24px; }
+      main { padding-top: 32px; }
+      h1 { font-size: 32px; }
+      nav ul { grid-template-columns: 1fr; }
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #141715; --ink: #eef3ef; --muted: #adb8b0; --line: #364139; --link: #8edab8; }
+    }
+    @media print {
+      :root { --bg: #fff; --ink: #000; --muted: #444; --line: #ccc; --link: #000; }
+      nav, .skip { display: none; }
+      .page { width: 100%; }
+      section { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#policy">Skip to privacy policy</a>
+  <div class="page">
+    <header>
+      <a class="brand" href="#policy" aria-label="Ash privacy policy">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false">
+          <circle cx="512" cy="512" r="512" fill="#111212"/>
+          <path d="M258 754 512 238l254 516" fill="none" stroke="#F0EDE7" stroke-linecap="round" stroke-linejoin="round" stroke-width="76"/>
+          <path d="m384 618 128 42 128-42" fill="none" stroke="#F0EDE7" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"/>
+          <path fill="#A96F55" d="M512 454c24 30 28 58 0 87-28-29-24-57 0-87Z"/>
+        </svg>
+        <span>Ash</span>
+      </a>
+    </header>
+    <main id="policy">
+      <h1>Privacy policy</h1>
+      <p class="meta">Effective <time datetime="2026-11-03">November 3, 2026</time> &middot; Android app</p>
+      <p class="intro">Your belongings, photos and receipts stay on your device in this release of Ash. No account is required.</p>
+      <p>This policy explains how Ash (package <strong>com.lyheang.ash</strong>), published by <strong>Lyheang Taing</strong>, handles information. It covers the current local-storage Android release, including technical data handled by the receipt-scanning SDK.</p>
+      <nav aria-label="Privacy policy sections">
+        <p>In this policy</p>
+        <ul>
+          <li><a href="#records">Records and photos</a></li>
+          <li><a href="#receipts">Receipt scanning</a></li>
+          <li><a href="#sdk">SDK diagnostics</a></li>
+          <li><a href="#sharing">Storage and sharing</a></li>
+          <li><a href="#deletion">Retention and deletion</a></li>
+          <li><a href="#support">Support and this website</a></li>
+          <li><a href="#children">Children and changes</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <section id="records" aria-labelledby="records-title">
+        <h2 id="records-title">1. Records and photos</h2>
+        <p>Ash stores information you enter on your device: asset names, categories, tags, purchase and estimated values, dates, notes, maintenance history and reminders. Calculations and suggestions run locally. Reminders appear inside Ash; they do not schedule device notifications or background alarms.</p>
+        <p>When you add an existing photo, Ash uses the Android system picker to access only the files you select. It copies selected images into app storage when possible. If copying fails, it may retain access to the selected document. Ash does not request unrestricted access to your photo library.</p>
+        <p>You can also take an asset photo using your device's camera app. Ash saves the returned photo in its app storage and does not itself add it to your photo library. Your chosen camera app and document provider may handle information under their own policies.</p>
+      </section>
+      <section id="receipts" aria-labelledby="receipts-title">
+        <h2 id="receipts-title">2. Receipt scanning</h2>
+        <p>Receipts are stored separately from asset photos, with up to five reviewed JPEG pages per receipt. Ash uses Google Play services' ML Kit document scanner for capture, cropping and cleanup. The scanning flow runs on your device; scanner resources may need to be downloaded on first use.</p>
+        <p>Ash does not upload your receipt pages to the developer in this release. It does not extract receipt text, merchant names, prices or purchase dates. An unfinished scan may be retained in app storage so you can retry or discard it.</p>
+        <p>For details about the scanner, see <a href="https://developers.google.com/ml-kit/vision/doc-scanner">Google's document scanner overview</a>.</p>
+      </section>
+      <section id="sdk" aria-labelledby="sdk-title">
+        <h2 id="sdk-title">3. SDK diagnostics</h2>
+        <p>The Android receipt scanner uses Google's ML Kit SDK. Google describes collection of technical data for diagnostics and usage analytics, including:</p>
+        <ul>
+          <li>Device information, such as manufacturer, model and operating-system version.</li>
+          <li>Application information, such as package name and version.</li>
+          <li>Device or installation identifiers.</li>
+          <li>Performance metrics and API configuration information.</li>
+        </ul>
+        <p>This technical collection is separate from the on-device processing of your receipt images. Google states that the listed SDK data is encrypted in transit using HTTPS. See <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit's Android data disclosure</a> and <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> for details.</p>
+      </section>
+      <section id="sharing" aria-labelledby="sharing-title">
+        <h2 id="sharing-title">4. Storage and sharing</h2>
+        <p>This release does not require an account, synchronize your collection to a backend, or send your collection, asset photos or receipt pages to Lyheang Taing. It has no advertising and adds no developer-operated analytics. The scanner SDK's technical diagnostics and usage analytics are described above.</p>
+        <p>Android, Google Play services, your camera app and system-selected document providers may process information under their own policies. Ash disables Android app cloud backups and device transfers. Original files and copies held by other services remain subject to their settings and policies.</p>
+        <p>Ash uses app-private storage for its local files. This does not guarantee protection on a compromised device or against access through your own device accounts, tools or backups. Protect your device and avoid adding information you do not want stored there.</p>
+      </section>
+      <section id="deletion" aria-labelledby="deletion-title">
+        <h2 id="deletion-title">5. Retention and deletion</h2>
+        <p>Local records and copied files remain on your device until removed. Deleting an asset removes its record and receipt metadata from the collection. Removing a receipt detaches it from the asset, but copied asset photos and receipt pages may remain in app storage. Discarding an unfinished scan removes its app-managed draft pages when possible.</p>
+        <p>To remove all app-managed records, photos and receipt pages, use <strong>Android Settings &rarr; Apps &rarr; Ash &rarr; Storage &rarr; Clear storage</strong>, or uninstall Ash. Clearing storage or uninstalling can permanently remove your local collection because this release provides no cloud synchronization.</p>
+        <p>Original photos, document-provider copies, scanner caches and system or third-party backups may retain separate copies. Contact the relevant provider or use its deletion controls. No secure-erasure guarantee is made.</p>
+      </section>
+      <section id="support" aria-labelledby="support-title">
+        <h2 id="support-title">6. Support and this website</h2>
+        <p>If you email us, your email address and any information you choose to send are processed to respond to your request and manage the correspondence. Our email provider also processes those messages. Do not send passwords, signing keys or sensitive receipt images. We retain support correspondence as needed to handle the request and any applicable obligations; you can contact us to request deletion, subject to those obligations.</p>
+        <p>This policy website is hosted on GitHub Pages. Hosting involves technical request information, such as your IP address, handled by GitHub under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. This page adds no analytics scripts, advertising, cookies or contact forms.</p>
+      </section>
+      <section id="children" aria-labelledby="children-title">
+        <h2 id="children-title">7. Children and policy changes</h2>
+        <p>Ash does not ask you to provide a date of birth or create an account in this release. If you have concerns about a child's personal information in connection with Ash, contact us using the address below.</p>
+        <p>We may update this policy when the app or its data practices change. The effective date at the top identifies this version. If a future release introduces accounts, remote storage or additional data collection, this policy and the app's disclosures will be updated to describe those changes.</p>
+      </section>
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">8. Contact</h2>
+        <address>
+          <strong>Lyheang Taing</strong><br>
+          Publisher of Ash<br>
+          Privacy and support: <a href="mailto:lyheang.taing.dev@gmail.com">lyheang.taing.dev@gmail.com</a>
+        </address>
+        <p style="margin-top: 16px">For questions about this policy, your information or support correspondence, please email the address above. The developer cannot access or remotely delete your on-device collection; use the local deletion controls described in section 5.</p>
+      </section>
+    </main>
+    <footer>Ash &middot; Published by Lyheang Taing &middot; <a href="#policy">Back to top</a></footer>
+  </div>
+</body>
+</html>
